@@ -1,0 +1,130 @@
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fbf7f1;
+  color: #1A1A1A;
+  padding: 50px;
+  gap: 40px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.contactInfo {
+  flex: 1;
+  padding: 30px;
+  max-width: 450px;
+  text-align: left;
+}
+
+.contactInfo h2 {
+  font-size: 22px;
+  margin-bottom: 25px;
+  color: #3E2B47;
+}
+
+.contactInfo p {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 18px;
+  gap: 12px;
+}
+
+.icon {
+  color: #BF7B45;
+  font-size: 24px;
+}
+
+.contactFormBox {
+  flex: 1;
+  max-width: 500px;
+  padding: 30px;
+}
+
+.heading {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-align: left;
+  color: #2B1A33;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactForm label {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #3E2B47;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid #3E2B47;
+  border-radius: 8px;
+  font-size: 18px;
+  background: white;
+  color: #1A1A1A;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: #BF7B45;
+}
+
+.textarea {
+  height: 120px;
+  resize: none;
+}
+
+.sendButton {
+  background-color: #BF7B45;
+  color: white;
+  padding: 14px;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sendButton:hover {
+  background-color: #A86938;
+}
+
+.buttonIcon {
+  font-size: 22px;
+}
+
+.statusMessage {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #008000;
+}
+
+@media screen and (max-width: 330px) {
+  .contactInfo {
+    max-width: 320px;
+  }
+  
+  .icon {
+    display: none;
+  }
+}
