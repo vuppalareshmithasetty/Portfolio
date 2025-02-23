@@ -14,7 +14,7 @@ const projects = [
     title: "Treks and Travels",
     description: "Implemented real-time messaging using Socket.io and MongoDB.",
     tech: ["HTML", "CSS", "JavaScript"],
-    // link: "https://example.com",
+    link: "https://github.com/vuppalareshmithasetty/Treks-and-Travels",
     image: "https://pics.craiyon.com/2024-09-21/QZf2ZjtxTGe_tZ7TXMojiQ.webp", 
   },
   {
