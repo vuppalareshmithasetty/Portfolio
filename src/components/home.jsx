@@ -6,7 +6,7 @@ const Home = () => {
   const handleDownload = () => {
     
     const link = document.createElement("a");
-    link.href = "https://drive.google.com/file/d/1RzqIpXw1f4SofHognfsy5RB1_z4ZFpIt/view?usp=sharing"; 
+    link.href = "https://drive.google.com/file/d/1KrnJO4tLvH8palkca4wZEMNSFMi80dC_/view?usp=sharing"; 
     link.download = "Resume_Reshmitha.pdf"; 
     link.click();
   };
