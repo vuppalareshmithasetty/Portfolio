@@ -1,6 +1,6 @@
 import React from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import styles from "./Project.module.css"; 
+import styles from "./Project.module.css";
 
 const projects = [
   {
@@ -8,22 +8,29 @@ const projects = [
     description: "Built with React.js, Node.js, and Express.js. Integrated Stripe for payments.",
     tech: ["React JS", "Express.js", "MongoDB"],
     link: "http://app.technicalhub.io:5567",
-    image: "https://pics.craiyon.com/2024-09-13/MOXDCaHlQ26pLtsHOwKMrA.webp", 
+    image: "https://pics.craiyon.com/2024-09-13/MOXDCaHlQ26pLtsHOwKMrA.webp",
   },
   {
     title: "Treks and Travels",
     description: "Implemented real-time messaging using Socket.io and MongoDB.",
     tech: ["HTML", "CSS", "JavaScript"],
-    // link: "https://example.com",
-    image: "https://pics.craiyon.com/2024-09-21/QZf2ZjtxTGe_tZ7TXMojiQ.webp", 
+    link: "https://github.com/vuppalareshmithasetty/Treks-and-Travels",
+    image: "https://pics.craiyon.com/2024-09-21/QZf2ZjtxTGe_tZ7TXMojiQ.webp",
+  },
+  {
+    title: "UConnect",
+    description: "A collaborative platform designed to connect students and faculty with real-time updates.",
+    tech: ["React JS", "Express.js", "MongoDB"],
+    link: "https://uconnectwebsite.onrender.com",
+    image: "https://img.freepik.com/free-vector/college-university-students-group-young-happy-people-standing-isolated-white-background_575670-66.jpg?ga=GA1.1.51235509.1756138672&semt=ais_hybrid&w=740&q=80",
   },
   {
     title: "Leaderboard",
     description: "Created an admin dashboard with charts and API integration.",
     tech: ["MySQL", "Java"],
-    // link: "https://example.com",
-    image: "https://pics.craiyon.com/2024-09-25/82q--MsvTbGj98uEC7_AAw.webp", 
+    image: "https://pics.craiyon.com/2024-09-25/82q--MsvTbGj98uEC7_AAw.webp",
   },
+  
 ];
 
 const Project = () => {
@@ -35,9 +42,11 @@ const Project = () => {
           <div key={index} className={styles.card}>
             <div className={styles.imageContainer}>
               <img src={project.image} alt={project.title} className={styles.image} />
-              <a href={project.link} target="_blank" rel="noopener noreferrer" className={styles.linkIcon}>
-                <FaExternalLinkAlt />
-              </a>
+              {project.link && (
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className={styles.linkIcon}>
+                  <FaExternalLinkAlt />
+                </a>
+              )}
             </div>
             <h3 className={styles.title}>{project.title}</h3>
             <div className={styles.techStack}>

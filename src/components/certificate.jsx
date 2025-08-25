@@ -33,6 +33,21 @@ const certificates = [
     issuer: "Cisco Networking Academy",
     issuedDate: "July, 2024",
   },
+  {
+    title: "Certified System Administrator",
+    issuer: "ServiceNow",
+    issuedDate: "May, 2025",
+  },
+  {
+    title: "Certified Application Developer",
+    issuer: "ServiceNow",
+    issuedDate: "May, 2025",
+  },
+  {
+    title: "Oracle Database Foundations",
+    issuer: "Oracle",
+    issuedDate: "July, 2025",
+  },
 ];
 
 const Certificate = () => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './skills.module.css'; 
 
-import { FaReact, FaJava, FaPython, FaNodeJs, FaHtml5, FaCss3Alt, FaJsSquare, FaServer, FaCode } from 'react-icons/fa';
+import { FaReact, FaJava, FaPython, FaNodeJs, FaHtml5, FaCss3Alt, FaJsSquare, FaServer, FaCode, FaCogs, FaGitAlt, FaGithub } from 'react-icons/fa';
 import { DiMysql, DiMongodb } from 'react-icons/di';
 
 const Skills = () => {
@@ -27,7 +27,12 @@ const Skills = () => {
 
         <div className={styles.skillCard}>
           <FaReact className={styles.skillIcon} />
-          <h3 className={styles.skillName}>React</h3>
+          <h3 className={styles.skillName}>React.js</h3>
+        </div>
+
+        <div className={styles.skillCard}>
+          <FaNodeJs className={styles.skillIcon} />
+          <h3 className={styles.skillName}>Node.js</h3>
         </div>
 
         <div className={styles.skillCard}>
@@ -61,8 +66,18 @@ const Skills = () => {
         </div>
 
         <div className={styles.skillCard}>
-          <FaReact className={styles.skillIcon} />
-          <h3 className={styles.skillName}>React Native</h3>
+          <FaCogs className={styles.skillIcon} />
+          <h3 className={styles.skillName}>ServiceNow</h3>
+        </div>
+
+        <div className={styles.skillCard}>
+          <FaGitAlt className={styles.skillIcon} />
+          <h3 className={styles.skillName}>Git</h3>
+        </div>
+
+        <div className={styles.skillCard}>
+          <FaGithub className={styles.skillIcon} />
+          <h3 className={styles.skillName}>GitHub</h3>
         </div>
       </div>
     </div>
