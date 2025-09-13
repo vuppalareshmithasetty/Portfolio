@@ -25,6 +25,14 @@ const projects = [
     image: "https://img.freepik.com/free-vector/college-university-students-group-young-happy-people-standing-isolated-white-background_575670-66.jpg?ga=GA1.1.51235509.1756138672&semt=ais_hybrid&w=740&q=80",
   },
   {
+  title: "FlowBridge",
+  description: "A ServiceNow-based application for managing gadget and AI device requests with automated approvals, notifications, and delivery tracking.",
+  tech: ["ServiceNow", "Flow Designer", "Custom Tables", "Client Scripts"],
+  link: "https://gitlab.com/customapp9943832/FlowBridge/-/tree/master?ref_type=heads", 
+  image: "https://tse4.mm.bing.net/th/id/OIP.EYGHRi0PnprUdyliUdFn4AHaE8?pid=Api&P=0&h=180",
+},
+
+  {
     title: "Leaderboard",
     description: "Created an admin dashboard with charts and API integration.",
     tech: ["MySQL", "Java"],
